@@ -3,7 +3,7 @@ Summary(pl):	Interfejs Tk dla CVS
 Name:		tkcvs
 Version:	7.2.1
 %define tar_version	%(echo %{version} | tr . _)
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Version Control
 Source0:	http://www.twobarleycorns.net/%{name}_%{tar_version}.tar.gz
@@ -45,11 +45,11 @@ modyfikacji.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Development,%{_pixmapsdir},%{_mandir}/man1}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir},%{_mandir}/man1}
 
 ./doinstall.tcl -nox -finallib %{_ulibdir} $RPM_BUILD_ROOT%{_prefix}
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Development/tkcvs.desktop
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 install tkcvs/tkcvs.1 $RPM_BUILD_ROOT%{_mandir}/man1/tkcvs.1
 
@@ -61,6 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGELOG FAQ vendor5readme.pdf
 %attr(755,root,root) %{_bindir}/*
 %{_ulibdir}/tkcvs
-%{_applnkdir}/Development/tkcvs.desktop
+%{_desktopdir}/*
 %{_pixmapsdir}/tkcvs.png
 %{_mandir}/man1/*
