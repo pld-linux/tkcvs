@@ -13,8 +13,8 @@ Source2:	%{name}.png
 Patch0:		%{name}-EDITOR.patch
 URL:		http://www.twobarleycorns.net/tkcvs.html
 Icon:		tkcvs.xpm
+BuildRequires:	perl-base
 BuildRequires:	tcl
-BuildRequires:	perl
 Requires:	cvs
 Requires:	rcs
 Requires:	tcl
@@ -52,6 +52,7 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Development,%{_pixmapsdir},%{_mandir}/m
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Development/tkcvs.desktop
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 install tkcvs/tkcvs.1 $RPM_BUILD_ROOT%{_mandir}/man1/tkcvs.1
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
