@@ -1,0 +1,8 @@
+--- tkcvs/mkmanpage.pl~	Sat Sep 16 06:31:07 2000
++++ tkcvs/mkmanpage.pl	Sun Apr 13 09:29:06 2003
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ open(HELP, "help.tcl") || die("Can't open helpl.tcl");
+   
