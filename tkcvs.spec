@@ -52,13 +52,3 @@ rm -rf $RPM_BUILD_ROOT
 
 /usr/X11R6/lib/tkcvs
 /usr/X11R6/man/mann/*
-
-%changelog
-* Thu Mar 25 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [6.0-3]
-- removed man group from man pages,
-- added "Requires: tcl",
-- removed Requires (autogenerate).
-
-* Wed Dec 23 1998 Arkadiusz Mi¶kiewicz <misiek@misiek.eu.org>
-- initial rpm release
