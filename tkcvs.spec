@@ -5,7 +5,7 @@ Version:	6.0
 Release:	3
 Copyright:	GPL
 Group:		Development/Version Control
-Group(pl):	Programowanie/Kontrola Wersji
+Group(pl):	Programowanie/Zarz±dzanie wersjami
 Source:		ftp://ftp.neosoft.com/pub/tcl/code/%{name}-%{version}.tar.gz
 Patch:		tkcvs-paths.patch
 Requires:	cvs
