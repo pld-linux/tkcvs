@@ -20,8 +20,6 @@ BuildRequires:	tcl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 Tk interface for CVS.
