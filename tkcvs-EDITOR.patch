@@ -1,0 +1,16 @@
+--- tkcvs-7_03/tkcvs/tkcvs_def.tcl.orig	Tue Apr  2 23:10:05 2002
++++ tkcvs-7_03/tkcvs/tkcvs_def.tcl	Tue Apr  2 23:28:31 2002
+@@ -134,7 +134,12 @@
+     # installed) a user can set the cvscfg(editor) variable to the editor
+     # of choice in their .tkcvs file (if they have one).
+     #set cvscfg(editor) "dtpad"
+-    set cvscfg(editor) "xterm -e vi"
++    if { (! [info exists env(EDITOR) ]) ||
++         ($env(EDITOR) == "") } {
++        set cvscfg(editor) "xterm -e vi"
++    } else {
++        set cvscfg(editor) "xterm -e $env(EDITOR)"
++    }
+     set cvscfg(editorargs) {}
+     # The file editor to be used may also be identified by pattern-matching the
+     # filename by setting the cvscfg(editors) variable.  This contains a series
