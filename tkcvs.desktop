@@ -7,4 +7,5 @@ Exec=tkcvs
 Icon=tkcvs.png
 Terminal=false
 Type=Application
+Categories=Development;RevisionControl;
 # vi: encoding=utf-8
