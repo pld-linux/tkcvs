@@ -12,7 +12,7 @@ Requires:	cvs
 Requires:	rcs
 Requires:	nedit
 Requires:	tcl
-BuildRoot:	/tmp/%{version}-%{name}-buildroot
+BuildRoot:	/tmp/%{name}-%{version}-root
 BuildArch:	noarch
 
 %description
