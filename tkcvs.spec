@@ -13,12 +13,12 @@ Source2:	%{name}.png
 Patch0:		%{name}-EDITOR.patch
 URL:		http://www.twobarleycorns.net/tkcvs.html
 Icon:		tkcvs.xpm
+BuildRequires:	tcl
+BuildRequires:	perl
 Requires:	cvs
 Requires:	rcs
 Requires:	tcl
 Requires:	tk >= 8.1
-BuildRequires:	tcl
-BuildRequires:	perl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
@@ -60,6 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.tkcvs CHANGELOG FAQ tkcvs/vendor.readme
 %attr(755,root,root) %{_bindir}/*
 %{_ulibdir}/tkcvs
-%{_mandir}/man1/*
 %{_applnkdir}/Development/tkcvs.desktop
 %{_pixmapsdir}/tkcvs.png
+%{_mandir}/man1/*
