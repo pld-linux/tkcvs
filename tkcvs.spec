@@ -7,8 +7,9 @@ License:	GPL
 Group:		Development/Version Control
 Group(de):	Entwicklung/Versionkontrolle
 Group(pl):	Programowanie/Zarz±dzanie wersjami
-Source0:	ftp://ftp.neosoft.com/pub/tcl/code/%{name}-%{version}.tar.gz
+Source0:	http://www.twobarleys.net/%{name}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
+URL:		http://www.twobarleys.net/tkcvs.html
 Requires:	cvs
 Requires:	rcs
 Requires:	nedit
