@@ -1,12 +1,13 @@
 Summary:	Tk interface for CVS
 Summary(pl):	Interfejs Tk dla CVS
 Name:		tkcvs
-Version:	7.0.3
-%define tar_version	7_03
-Release:	3.1
+Version:	7.1.2
+%define tar_version	%(echo %{version} | tr . _)
+Release:	0.1
 License:	GPL
 Group:		Development/Version Control
-Source0:	http://www.twobarleycorns.net/%{name}-%{tar_version}.tar.gz
+Source0:	http://www.twobarleycorns.net/%{name}_%{tar_version}.tar.gz
+# Source0-md5:	59c250d269aaae3982933d4133aa5b8b
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-EDITOR.patch
@@ -39,7 +40,7 @@ wchodzi TkDiff - narzêdzie do przegl±dania i ³±czenia naniesionych
 modyfikacji.
 
 %prep
-%setup -q -n %{name}-%{tar_version}
+%setup -q -n %{name}_%{tar_version}
 %patch0 -p1
 %patch1 -p0
 
