@@ -5,8 +5,6 @@ Version:	6.0
 Release:	3
 License:	GPL
 Group:		Development/Version Control
-Group(de):	Entwicklung/Versionkontrolle
-Group(pl):	Programowanie/Zarz±dzanie wersjami
 Source0:	http://www.twobarleys.net/%{name}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 URL:		http://www.twobarleys.net/tkcvs.html
