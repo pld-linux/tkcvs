@@ -1,0 +1,48 @@
+diff -urN tkcvs-6.0.orig/tkcvs/tkcvs.blank tkcvs-6.0/tkcvs/tkcvs.blank
+--- tkcvs-6.0.orig/tkcvs/tkcvs.blank	Wed Dec 23 20:39:12 1998
++++ tkcvs-6.0/tkcvs/tkcvs.blank	Wed Dec 23 20:57:46 1998
+@@ -1,4 +1,4 @@
+-#!WISH -f
++#!/usr/bin/wish -f
+ 
+ #
+ # $Id$
+@@ -14,12 +14,12 @@
+ # Constants for user configuration
+ #
+ # Change these two variables to point to your bitmaps directories.
+-set global_bitmapdir "GDIR"
+-set local_bitmapdir "LDIR"
+-set cvscfg(editor) "EDITOR"
++set global_bitmapdir "/usr/X11R6/lib/X11/xfm/bitmaps"
++set local_bitmapdir "/usr/X11R6/lib/tkcvs/bitmaps"
++set cvscfg(editor) "/usr/X11R6/bin/nedit"
+ set cvscfg(editorargs) {}
+ 
+-set auto_path [linsert $auto_path 0 TCDIR]
++set auto_path [linsert $auto_path 0 /usr/X11R6/lib/tkcvs]
+ 
+ set cvscfg(allfiles) 0
+ set cvscfg(tagmissing) 0
+@@ -31,9 +31,9 @@
+ 
+ 
+ # Read in defaults
+-if [file exists TCDIR/tkcvs_def.tcl] {
+-  # catch {source TCDIR/tkcvs_def.tcl}
+-  source TCDIR/tkcvs_def.tcl
++if [file exists /usr/X11R6/lib/tkcvs/tkcvs_def.tcl] {
++  # catch {source /usr/X11R6/lib/tkcvs/tkcvs_def.tcl}
++  source /usr/X11R6/lib/tkcvs/tkcvs_def.tcl
+ }
+ if [file exists ~/.tkcvs] {
+   # catch {source ~/.tkcvs}
+diff -urN tkcvs-6.0.orig/tkdiff/tkdiff.blank tkcvs-6.0/tkdiff/tkdiff.blank
+--- tkcvs-6.0.orig/tkdiff/tkdiff.blank	Wed Dec 23 20:39:12 1998
++++ tkcvs-6.0/tkdiff/tkdiff.blank	Wed Dec 23 20:39:30 1998
+@@ -1,4 +1,4 @@
+-#!WISH -f
++#!/usr/bin/wish -f
+ 
+ # v1.0 (production)
+ 
