@@ -3,7 +3,7 @@ Summary(pl):	Interfejs Tk dla CVS
 Name:		tkcvs
 Version:	7.0.3
 %define tar_version	7_03
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Version Control
 Source0:	http://www.twobarleycorns.net/%{name}-%{tar_version}.tar.gz
