@@ -3,7 +3,7 @@ Summary(pl):	Interfejs Tk dla CVS
 Name:		tkcvs
 Version:	7.2
 %define tar_version	%(echo %{version} | tr . _)
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Development/Version Control
 Source0:	http://www.twobarleycorns.net/%{name}_%{tar_version}.tar.gz
@@ -22,6 +22,7 @@ BuildRequires:	perl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
+%define _ulibdir /usr/lib
 
 %description
 TkCVS is a Tcl/Tk-based graphical interface to the CVS configuration
@@ -46,7 +47,7 @@ modyfikacji.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_applnkdir}/Development,%{_pixmapsdir},%{_mandir}/man1}
 
-./doinstall.tcl -nox -finallib %{_libdir} $RPM_BUILD_ROOT%{_prefix}
+./doinstall.tcl -nox -finallib %{_ulibdir} $RPM_BUILD_ROOT%{_prefix}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Development/tkcvs.desktop
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
@@ -58,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.tkcvs CHANGELOG FAQ tkcvs/vendor.readme
 %attr(755,root,root) %{_bindir}/*
-%{_libdir}/tkcvs
+%{_ulibdir}/tkcvs
 %{_mandir}/man1/*
 %{_applnkdir}/Development/tkcvs.desktop
 %{_pixmapsdir}/tkcvs.png
