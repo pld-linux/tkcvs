@@ -42,14 +42,12 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Development,%{_pixmapsdir}}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Development/tkcvs.desktop
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
-gzip -9nf README.tkcvs CHANGELOG FAQ tkcvs/vendor.readme
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz tkcvs/*gz
+%doc README.tkcvs CHANGELOG FAQ tkcvs/vendor.readme
 %attr(755,root,root) %{_bindir}/*
 %{_libdir}/tkcvs
 %{_mandir}/man?/*
