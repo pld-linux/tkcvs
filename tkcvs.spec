@@ -7,11 +7,10 @@ Release:	1
 License:	GPL
 Group:		Development/Version Control
 Source0:	http://www.twobarleycorns.net/%{name}-%{tar_version}.tar.gz
-# Patch0:		%{name}-paths.patch
+Patch0:		%{name}-EDITOR.patch
 URL:		http://www.twobarleycorns.net/tkcvs.html
 Requires:	cvs
 Requires:	rcs
-# Requires:	nedit
 Requires:	tcl
 Requires:	tk >= 8.1
 BuildRequires:	tcl
@@ -29,13 +28,12 @@ Interfejs Tk dla CVS.
 
 %prep
 %setup -q -n %{name}-%{tar_version}
-# %%patch -p1
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-./doinstall.tcl -finallib %{_prefix} $RPM_BUILD_ROOT%{_prefix}
-
+./doinstall.tcl -finallib %{_libdir} $RPM_BUILD_ROOT%{_prefix}
 
 # install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/tkcvs/bitmaps,%{_mandir}/mann}
 # install tkcvs/cvscheck.blank $RPM_BUILD_ROOT%{_bindir}/cvscheck
