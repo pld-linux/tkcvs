@@ -35,16 +35,6 @@ rm -rf $RPM_BUILD_ROOT
 
 ./doinstall.tcl -finallib %{_libdir} $RPM_BUILD_ROOT%{_prefix}
 
-# install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/tkcvs/bitmaps,%{_mandir}/mann}
-# install tkcvs/cvscheck.blank $RPM_BUILD_ROOT%{_bindir}/cvscheck
-# install tkcvs/tkcvs.blank    $RPM_BUILD_ROOT%{_bindir}/tkcvs
-# install tkcvs/*.tcl          $RPM_BUILD_ROOT%{_libdir}/tkcvs
-# install tkcvs/tclIndex       $RPM_BUILD_ROOT%{_libdir}/tkcvs
-# install bitmaps/*            $RPM_BUILD_ROOT%{_libdir}/tkcvs/bitmaps
-# install tkdiff/tkdiff.blank  $RPM_BUILD_ROOT%{_bindir}/tkdiff
-# install tkdiff/*.n           $RPM_BUILD_ROOT%{_mandir}/mann
-# install tkcvs/*.n            $RPM_BUILD_ROOT%{_mandir}/mann
-
 gzip -9nf README.tkcvs CHANGELOG FAQ tkcvs/vendor.readme
 
 %clean
