@@ -12,7 +12,7 @@ Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-EDITOR.patch
 URL:		http://www.twobarleycorns.net/tkcvs.html
-#Icon:		tkcvs.xpm
+Icon:		tkcvs.xpm
 BuildRequires:	perl-base
 BuildRequires:	tcl
 Requires:	cvs
