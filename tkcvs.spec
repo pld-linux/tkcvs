@@ -1,18 +1,18 @@
 Summary:	Tk interface for CVS
 Summary(pl):	Interfejs Tk dla CVS
 Name:		tkcvs
-Version:	7.2
+Version:	7.2.1
 %define tar_version	%(echo %{version} | tr . _)
 Release:	1
 License:	GPL
 Group:		Development/Version Control
 Source0:	http://www.twobarleycorns.net/%{name}_%{tar_version}.tar.gz
-# Source0-md5:	853af837c673eac899354bf01a62a940
+# Source0-md5:	a552cdccd7cde73eaa8a41294f499cfc
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-EDITOR.patch
 URL:		http://www.twobarleycorns.net/tkcvs.html
-Icon:		tkcvs.xpm
+#Icon:		tkcvs.xpm
 BuildRequires:	perl-base
 BuildRequires:	tcl
 Requires:	cvs
@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.tkcvs CHANGELOG FAQ tkcvs/vendor.readme
+%doc CHANGELOG FAQ vendor5readme.pdf
 %attr(755,root,root) %{_bindir}/*
 %{_ulibdir}/tkcvs
 %{_applnkdir}/Development/tkcvs.desktop
