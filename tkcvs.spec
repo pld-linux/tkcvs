@@ -33,9 +33,9 @@ changes.
 %description -l pl
 TkCVS jest opartym o Tcl/Tk graficznym interfejsem do systemu zarz±dania
 wersjami CVS. Program wy¶wietla stan plików w aktualnym katalogu roboczym,
-potrafi wy¶wietkiæ historiê wybranego pliku w postaci wykresu oraz pozwala 
-na wykonywanie poleceñ CVS przy u¿yciu menu i guzików. W sk³ad pakietu 
-wchodzi TkDiff - narzêdzie do przegl±dania i ³±czenia naniesionych 
+potrafi wy¶wietkiæ historiê wybranego pliku w postaci wykresu oraz pozwala
+na wykonywanie poleceñ CVS przy u¿yciu menu i guzików. W sk³ad pakietu
+wchodzi TkDiff - narzêdzie do przegl±dania i ³±czenia naniesionych
 modyfikacji.
 
 %prep
