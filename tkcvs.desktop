@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=TkCVS
+Comment=Tk interface for CVS
+Comment[pl]=Interfejs Tk dla CVS
+Exec=tkcvs
+Icon=tkcvs.png
+Terminal=0
+Type=Application
+# vi: encoding=utf-8
