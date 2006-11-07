@@ -60,6 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGELOG FAQ vendor5readme.pdf
 %attr(755,root,root) %{_bindir}/*
 %{_ulibdir}/tkcvs
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/tkcvs.png
 %{_mandir}/man1/*
