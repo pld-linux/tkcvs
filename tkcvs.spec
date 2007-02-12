@@ -1,5 +1,5 @@
 Summary:	Tk interface for CVS
-Summary(pl):	Interfejs Tk dla CVS
+Summary(pl.UTF-8):   Interfejs Tk dla CVS
 Name:		tkcvs
 Version:	7.2.1
 %define tar_version	%(echo %{version} | tr . _)
@@ -30,12 +30,12 @@ working directory, and provides buttons and menus to execute CVS commands
 on the selected files.  TkDiff is included for browsing and merging your
 changes.
 
-%description -l pl
-TkCVS jest opartym o Tcl/Tk graficznym interfejsem do systemu zarz±dzania
-wersjami CVS. Program wy¶wietla stan plików w aktualnym katalogu roboczym,
-potrafi wy¶wietliæ historiê wybranego pliku w postaci wykresu oraz pozwala
-na wykonywanie poleceñ CVS przy u¿yciu menu i guzików. W sk³ad pakietu
-wchodzi TkDiff - narzêdzie do przegl±dania i ³±czenia naniesionych
+%description -l pl.UTF-8
+TkCVS jest opartym o Tcl/Tk graficznym interfejsem do systemu zarzÄ…dzania
+wersjami CVS. Program wyÅ›wietla stan plikÃ³w w aktualnym katalogu roboczym,
+potrafi wyÅ›wietliÄ‡ historiÄ™ wybranego pliku w postaci wykresu oraz pozwala
+na wykonywanie poleceÅ„ CVS przy uÅ¼yciu menu i guzikÃ³w. W skÅ‚ad pakietu
+wchodzi TkDiff - narzÄ™dzie do przeglÄ…dania i Å‚Ä…czenia naniesionych
 modyfikacji.
 
 %prep
