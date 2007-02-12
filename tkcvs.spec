@@ -1,5 +1,5 @@
 Summary:	Tk interface for CVS
-Summary(pl.UTF-8):   Interfejs Tk dla CVS
+Summary(pl.UTF-8):	Interfejs Tk dla CVS
 Name:		tkcvs
 Version:	7.2.1
 %define tar_version	%(echo %{version} | tr . _)
