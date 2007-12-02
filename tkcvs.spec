@@ -14,12 +14,12 @@ Patch0:		%{name}-EDITOR.patch
 URL:		http://www.twobarleycorns.net/tkcvs.html
 BuildRequires:	perl-base
 BuildRequires:	tcl
-Requires:	cvs
+Requires:	cvs-client
 Requires:	rcs
 Requires:	tcl
 Requires:	tk >= 8.1
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define _ulibdir /usr/lib
 
