@@ -1,10 +1,9 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=TkCVS
 Comment=Tk interface for CVS
 Comment[pl]=Interfejs Tk dla CVS
 Exec=tkcvs
-Icon=tkcvs.png
+Icon=tkcvs
 Terminal=false
 Type=Application
 Categories=Development;RevisionControl;
