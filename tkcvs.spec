@@ -2,12 +2,12 @@
 Summary:	Tk interface for CVS
 Summary(pl.UTF-8):	Interfejs Tk dla CVS
 Name:		tkcvs
-Version:	7.2.1
-Release:	3
+Version:	8.2
+Release:	1
 License:	GPL
 Group:		Development/Version Control
 Source0:	http://www.twobarleycorns.net/%{name}_%{tar_version}.tar.gz
-# Source0-md5:	a552cdccd7cde73eaa8a41294f499cfc
+# Source0-md5:	f263e59233625145a4efc38b14241e0c
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://www.twobarleycorns.net/tkcvs.html
